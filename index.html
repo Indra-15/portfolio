@@ -148,6 +148,39 @@
                     </div>
                 </div>
             </div>
+
+            <section id="my-keyboards">
+                <div class="container">
+                    <div class="row text-center mb-3">
+                        <div class="col">
+                            <h2>My Keyboard</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="keyboard-box">
+                                <h4 class="keyboard-name">Keychron K2</h4>
+                                <img src="img/keyboard/3.png" alt="keychron K3" class="keyboard-img">
+                                <a href="#" class="btn btn-light keyboard-detail-btn">Show details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="keyboard-box">
+                                <h4 class="keyboard-name">Purplr RGB</h4>
+                                <img src="img/keyboard/5.png" alt="Womier RGB" class="keyboard-img">
+                                <a href="#" class="btn btn-light keyboard-detail-btn">Show details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="keyboard-box">
+                                <h4 class="keyboard-name">Dragon Blue</h4>
+                                <img src="img/keyboard/2.png" alt="Red Dragon" class="keyboard-img">
+                                <a href="#" class="btn btn-light keyboard-detail-btn">Show details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#ffffff" fill-opacity="1"
                     d="M0,64L34.3,64C68.6,64,137,64,206,90.7C274.3,117,343,171,411,181.3C480,192,549,160,617,122.7C685.7,85,754,43,823,58.7C891.4,75,960,149,1029,170.7C1097.1,192,1166,160,1234,122.7C1302.9,85,1371,43,1406,21.3L1440,0L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
@@ -347,6 +380,15 @@
                     })
                     .catch(error => console.error('Error!', error.message))
             })
+        </script>
+
+        <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+                max: 25,
+                speed: 400,
+                glare: true
+            });
         </script>
     </body>
 
